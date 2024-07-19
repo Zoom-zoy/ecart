@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Section Layout</title>
+    <link rel="stylesheet" href="sample1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="images/icons/Logo.svg" alt="Logo"></a>
+            </div>
+            <nav class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <button><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </nav>
+            <div class="nav-right">
+                <a href="#"><img src="images/icons/wishlist.svg" alt="Wishlist"></a>
+                <a href="#"><img src="images/icons/account.svg" alt="Account"></a>
+                <a href="#"><img src="images/icons/cart.svg" alt="Cart"></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="main">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item" style="background-image: url('images/bgs/shop-hero-1-product-slide-1.png');"></div>
+                <div class="carousel-item" style="background-image: url('images/bgs/voilet2.png');"></div>
+                <div class="carousel-item" style="background-image: url('images/bgs/main2.png');"></div>
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="overlay-content">
+            <h3>T-Shirt / Tops</h3>
+            <h1>Summer<br>Value Pack</h1>
+            <h3>cool / colorful / comfy</h3>
+            <button class="cta-button">Shop Now</button>
+        </div>
+    </section>
+
+    <section id="third">
+        <div class="left-section">
+            <div class="container1">
+                <div class="overlay-content">
+                    <h5>Low Price</h5>
+                    <br>
+                    <h1>High Coziness</h1>
+                    <p>UPTO 50% OFF</p>
+                    <br>
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="container2">
+                <div class="overlay-content">
+                    <h5>Beyoung Presents</h5>
+                    <br>
+                    <h1>Breezy Summer<br>Style</h1>
+                    <p>UPTO 50% OFF</p>
+                    <br>
+                    <a href="#">Explore Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="gallery-content">
+           <span><img src="images/bgs/Rectangle 21 voil.png" alt="line" class="line1"> New Arrival</span> 
+            <div class="gallery-carousel">
+                <div class="gallery-images">
+                    <div class="gallery-item">
+                        <img src="images/images2/active.jpg" alt="Gallery Image 1">
+                        <p>Knitted Joggers</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-2.jpg" alt="Gallery Image 2">
+                        <p>Urban Shirts</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-3.jpg" alt="Gallery Image 3">
+                        <p>Full Sleeve</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-4.jpg" alt="Gallery Image 4">
+                        <p>Active T-Shirts</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/active.jpg" alt="Gallery Image 1">
+                        <p>Knitted Joggers</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-2.jpg" alt="Gallery Image 2">
+                        <p>Urban Shirts</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-3.jpg" alt="Gallery Image 3">
+                        <p>Full Sleeve</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/images2/img-4.jpg" alt="Gallery Image 4">
+                        <p>Active T-Shirts</p>
+                    </div>
+                    
+                </div>
+                <button class="gallery-prev"><i class="fas fa-arrow-left"></i></button>
+                <button class="gallery-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="new-section">
+        <div class="new-section-content">
+            <div class="left-side">
+                <div class="background-content">
+                    <h1>WE MADE YOUR EVERYDAY
+                        <br> FASHION BETTER!
+                    </h1>
+                    <br><br>
+                    <p>In our journey to improve everyday fashion, <br> <br>euphoria presents EVERYDAY wear range - <br><br>Comfortable & Afforodable fashion 24/7</p>
+                    <br>
+                    <br><br><button class="cta-button">Shop Now</button>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="images/bgs/team.png" alt="Right Side Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="comp-new-section">
+        <div class="comp-new-section-content">
+            <span><img src="images/bgs/Rectangle 21 voil.png" alt="line" class="line2"> Categories For Men</span>
+            <div class="comp-row">
+                <div class="comp-column">
+                    <img src="images/bgs/shirt.png" alt="Design 1">
+                    <h3>Shirts</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/print.png" alt="Design 2">
+                    <h3>Printed T-Shirts</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/plain.png" alt="Design 3">
+                    <h3>Plain T-Shirts</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/images2/polo.jpg" alt="Design 4">
+                    <h3>Polo T-Shirt</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+            </div>
+            <div class="comp-row">
+                <div class="comp-column">
+                    <img src="images/bgs/hood.png" alt="Design 5">
+                    <h3>Hoodies & Sweetshirt</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/jeans.png" alt="Design 6">
+                    <h3>Jeans</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/acti.png" alt="Design 7">
+                    <h3>Activewear</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/box.png" alt="Design 8">
+                    <h3>Boxers</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+            </div>
+             <span><img src="images/bgs/Rectangle 21 voil.png" alt="line" class="line2"> Categories For Women</span>
+            <div class="comp-row">
+                <div class="comp-column">
+                    <img src="images/bgs/womn1.png" alt="Design 1">
+                    <h3>Hoodies & Sweetshirt</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/womn2.png" alt="Design 2">
+                    <h3>Coats & Parkas</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/womn3.png" alt="Design 3">
+                    <h3>Tees & T-Shirt</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-right arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+                <div class="comp-column">
+                    <img src="images/bgs/womn4.png" alt="Design 4">
+                    <h3>Boxers</h3>
+                    <a href="#"><p>Explore Now !</p></a>
+                    <i class="fas fa-arrow-left arrow-icon"></i> <!-- Arrow icon added -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="back" >
+        <div class="back-content">
+            <h1>Top Brand Deal</h1>
+            <p class="in">Up To <span class="int">60%</span> off on brands</p>
+            <div class="back-images">
+                <div class="back-image">
+                    <img src="images/bgs/nik.png" alt="Image 1">
+                </div>
+                <div class="back-image">
+                    <img src="images/bgs/hm.png" alt="Image 2">
+                </div>
+                <div class="back-image">
+                    <img src="images/bgs/us.png" alt="Image 3">
+                </div>
+                <div class="back-image">
+                    <img src="images/bgs/lvs.png" alt="Image 4">
+                </div>
+                <div class="back-image">
+                    <img src="images/bgs/pum.png" alt="Image 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="wish">
+        <div class="wish-content">
+            <span><img src="images/bgs/Rectangle 21 voil.png" alt="line" class="line3"> Categories For Men</span>
+            <div class="wish-row">
+                <div class="wish-column">
+                    <i class="wishlist-icon fa fa-heart"></i> <!-- Add this line -->
+                    <img src="images/bgs/wit.png" alt="Design 1">
+                    <h3>Black Sweartshirt with...</h3>
+                    <a href="#"><p>Jhanvi's Brand</p></a>
+                    <p class="dollar">$123.00</p> 
+                </div>
+                <div class="wish-column">
+                    <i class="wishlist-icon fa fa-heart"></i> <!-- Add this line -->
+                    <img src="images/bgs/peach.png" alt="Design 2">
+                    <h3>Line Pattern Black H...</h3>
+                    <a href="#"><p>AS's Brand</p></a>
+                    <p class="dollar">$37.00</p> 
+                </div>
+                <div class="wish-column">
+                    <i class="wishlist-icon fa fa-heart"></i> <!-- Add this line -->
+                    <img src="images/bgs/orange.png" alt="Design 3">
+                    <h3>Black Shorts</h3>
+                    <a href="#"><p>MM's Brand</p></a>
+                    <p class="dollar">$39.00</p> 
+                </div>
+                <div class="wish-column">
+                    <i class="wishlist-icon fa fa-heart"></i> <!-- Add this line -->
+                    <img src="images/bgs/pink.png" alt="Design 4">
+                    <h3>Levender Hoodie with...</h3>
+                    <a href="#"><p>Nike's Brand</p></a>
+                    <p class="dollar">$119.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="feed">
+        <div class="feed-content">
+            <span><img src="images/bgs/Rectangle 21 voil.png" alt="line" class="line4"> Feedback</span>
+            <div class="feed-row">
+                <div class="feed-column">
+                    <div class="profile-image">
+                        <img src="images/bgs/pro1.svg" alt="Profile 1">
+                    </div>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Floyd Miles</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                        Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua <br>dolor do amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="feed-column">
+                    <div class="profile-image">
+                        <img src="images/bgs/pro2.png" alt="Profile 2">
+                    </div>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <!-- <i class="fas fa-star"></i> -->
+                    </div>
+                    <h2>Ronald Richards</h2>
+                    <p>ullamco est sit aliqua dolor do amet sint. Velit officia <br>consequat duis enim velit mollit. Exercitation veniam<br> consequat sunt nostrud amet.</p>
+                </div>
+                <div class="feed-column">
+                    <div class="profile-image">
+                        <img src="images/bgs/pro3.png" alt="Profile 3">
+                    </div>
+                    <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Savannah Nguyen</h2>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua<br> dolor do amet sint. Velit officia consequat duis enim velit<br> mollit. <br>
+                        Exercitation veniam consequat sunt nostrud amet. Amet <br>minim mollit non deserunt ullamco est sit aliqua dolor do<br> amet sint. Velit officia consequat duis enim velit mollit. <br>Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Need Help</h1></li>
+                        <li><p>Contact Us</p></li>
+                        <li><p>Track Order</p></li>
+                        <li><p>Returns & Refunds</p></li>
+                        <li><p>FAQ's</p></li>
+                        <li><p>Career</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Company</h1></li>
+                        <li><p>About Us</p></li>
+                        <li><p>euphoria Blog</p></li>
+                        <li><p>euphoriastan</p></li>
+                        <li><p>Collaboration</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>More Info</h1></li>
+                        <li><p>Term and Conditions</p></li>
+                        <li><p>Privacy Policy</p></li>
+                        <li><p>Shipping Policy</p></li>
+                        <li><p>Sitemap</p></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <ul>
+                        <li><h1>Location</h1></li>
+                        <li><p>support@euphoria.in</p></li>
+                        <li><p>Eklingpura Chouraha, Ahmedabad Main Road</p></li>
+                        <li><p>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</p></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social-media">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-info">
+                    <h1>Download The App</h1>
+                    <div class="info-columns">
+                        <div class="info-column">
+                            <img src="images/bgs/ggl.png" alt="Image 1">
+                           
+                        </div>
+                        <div class="info-column">
+                            <img src="images/bgs/playstore.png" alt="Image 2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-category">
+                <select>
+                    <option value="category1">Popular Categories</option>
+                    <option value="category2">Category 2</option>
+                    <option value="category3">Category 3</option>
+                    <option value="category4">Category 4</option>
+                </select>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+
+    
+    
+    <script src="sample.js"></script>
+    <script src="sample2.js"></script>
+</body>
+</html>

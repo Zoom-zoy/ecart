@@ -1,0 +1,1024 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(0, 0%, 98%);
+    padding: 30px 0;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    z-index: 1000; /* Ensure it sits above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 100px;
+    width: 15vh;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0 20px 0 0;
+}
+
+.nav-links li {
+    margin: 10px 20px;
+}
+
+.nav-links a {
+    color: #0000008e;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 21px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-box button {
+    background-color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+.search-box button i {
+    color: #000000c5;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    margin-left: 35px; 
+}
+
+body {
+    padding-top: 100px; /* Adjust this padding based on the height of your header to avoid content overlap */
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    margin-right: 150px;
+    height: 90vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: left; /* Align content to the left */
+    padding-left: 0;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 90px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #ffffff;
+}
+
+#main .overlay-content {
+    position: absolute;
+    top: 10%;
+    left: 30vh; 
+    font-family: "Noto Sans", sans-serif;
+    z-index: 1;
+}
+
+#main .overlay-content h1 {
+    margin: 0;
+    font-size: 100px; /* Increased font size */
+}
+
+#main .overlay-content h3 {
+    font-size: 30px; /* Increased font size */
+}
+
+#main .overlay-content .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+#main .overlay-content .cta-button:hover {
+    background-color: #19d8e6;
+}
+
+#third {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth animation */
+}
+
+.left-section:hover, .right-section:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); Add shadow effect */
+}
+
+.container1, .container2 {
+    position: relative;
+    height: 420px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the left */
+    color: #fff;
+    text-align: left;
+    border-radius: 40px; /* Add border radius here */
+}
+
+.container1 {
+    background-image: url('images/bgs/main2.png'); /* Path to your background image for container1 */
+    margin-right: 60px; /* Gap between container1 and container2 */
+}
+
+.container2 {
+    background-image: url('images/bgs/voilet2.png'); /* Path to your background image for container2 */
+    margin-right: 10px;
+}
+
+.container1 .overlay-content, .container2 .overlay-content {
+    position: absolute;
+    left: 20px; /* Align to the left side */
+    padding: 20px;
+}
+
+.overlay-content h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.overlay-content h5 {
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+.overlay-content p{
+    font-size: 15px;
+}
+
+.overlay-content a {
+    font-size: 15px;
+    margin: 10px 0;
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#gallery {
+    padding: 20px 20px;
+    background-color: #f8f8f8;
+}
+
+.gallery-content {
+    margin: 0;
+    padding: 0 50px;
+    position: relative;
+}
+
+
+
+.gallery-content span {
+    font-size: 33px;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    margin-top: 30px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(60, 66, 66, 1);
+    font-weight: bold;
+    gap: 20px;
+}
+
+.line1 {
+    width: 7px;
+    height: 40px;
+    display: flex;
+    padding:6px 0;
+    margin-bottom: 20px;
+}
+
+.gallery-carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+
+}
+
+.gallery-item {
+    min-width: 25%;
+    gap: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 0 30px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    font-size: 20px;
+    color: rgba(60, 66, 66, 1);
+    margin-top: 12px;
+    margin-left: 10px;
+    font-weight: bold;
+    align-items: baseline;
+    font-family: "Urbanist", sans-serif;
+}
+
+.gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: rgba(255, 255, 255, 0.6); */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gallery-prev {
+    left: 40px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+#new-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.new-section-content {
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.left-side {
+    flex: 1;
+    position: relative;
+    background-image: url('images/bgs/leaf.png');
+    background-size: cover;
+    background-position: center;
+   
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: left;
+    margin-left: px;
+  
+    height: 800px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+
+
+}
+
+.background-content {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.left-side::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.4); */
+    /* border-radius: 10px; */
+    z-index: 0;
+}
+
+.background-content h1 {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 20px 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.background-content p {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+    font-family: "Noto Sans", sans-serif;
+    color: rgb(184, 179, 179);
+}
+
+.background-content .cta-button {
+    padding: 20px 70px;
+    background-color: #ffffff;
+    font-family: "Noto Sans", sans-serif;
+    color:rgba(60, 66, 66, 1);
+    text-decoration: none;
+    border-radius: 12px;
+    font-size: 21px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.background-content .cta-button:hover {
+    background-color: #14331091;
+}
+
+.right-side {
+    flex: 1;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.right-side img {
+    width: 800px;
+    height: 800px;
+    /* left: 614px; */
+    right: 40px;
+    /* border-radius: 10px; */
+}
+
+#comp-new-section {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.comp-new-section-content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+.comp-new-section-content span {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 30px;
+    font-family:  "Noto Sans", sans-serif;
+    color: rgba(60, 66, 66, 1);
+    font-weight: bold;
+    gap: 20px;
+}
+
+.comp-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.comp-column {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.comp-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comp-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.comp-column h3,
+.comp-column p {
+    font-family: "Noto Sans", sans-serif;
+    margin: 5px 0;
+    text-align: left;
+    /* color: #333; */
+}
+
+.comp-column h3 {
+    font-size: 18px;
+    color:rgba(25, 25, 25, 1);
+}
+
+.comp-column a {
+    font-size: 14px;
+    color: rgba(127, 127, 127, 1);
+    text-decoration:none ;
+}
+
+.line2 {
+    width: 7px;
+    height: 38px;
+    display: flex;
+    padding:  6px 0;
+}
+
+/* Add this CSS to the existing styles */
+.comp-column {
+    position: relative; /* Ensure position relative to position the arrow icon correctly */
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 40px; /* Adjust the value as needed */
+    right: 30px; /* Adjust the value to place the icon outside the column */
+    font-size: 19px; /* Adjust the size as needed */
+    color: #666;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth animation */
+}
+
+.comp-column:hover .arrow-icon {
+    color: #000; /* Change color on hover */
+    transform: translateX(5px); /* Slightly move the icon to the right on hover */
+}
+
+#back {
+    background-color: rgba(60, 66, 66, 1);
+    padding: 50px 20px;
+    text-align: center; /* Gray background color */
+    border-radius: 20px;
+    width: 86%;
+    height: 360px;
+    margin-left: 6%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.back-content {
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: -40px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 1px;
+}
+
+.back-content h1 {
+    font-size: 70px;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.back-content p {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+#back .back-content .in .int{
+    font-weight: bold;
+    color: rgba(251, 209, 3, 1);
+}
+
+.back-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    
+}
+
+.back-image {
+    flex: 1;
+    width: 10%; /* Adjust the width of each image */
+}
+
+.back-image img {
+    width: 93%;
+    height: 80%;
+    border-radius: 9px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* background-color: #f8f8f8; */
+}
+
+
+#wish {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.wish-content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+.wish-content span {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 30px;
+    font-family:  "Noto Sans", sans-serif;
+    color: rgba(60, 66, 66, 1);
+    font-weight: bold;
+    gap: 20px;
+}
+
+.wish-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.wish-column {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wish-column:hover {
+    transform: scale(1.05);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+}
+
+.wish-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.wish-column h3,
+.wish-column p {
+    font-family: "Noto Sans", sans-serif;
+    margin: 5px 0;
+    text-align: left;
+    /* color: #333; */
+}
+
+.wish-column h3 {
+    font-size: 15px;
+    color:rgba(60, 66, 66, 1);
+}
+
+.wish-column a {
+    font-size: 14px;
+    color: rgba(128, 125, 126, 1);
+    text-decoration:none ;
+}
+
+.line3 {
+    width: 7px;
+    height: 38px;
+    display: flex;
+    padding:  6px 0;
+}
+
+/* Add this CSS to the existing styles */
+.wish-column {
+    position: relative; /* Ensure position relative to position the arrow icon correctly */
+}
+
+.dollar {
+    position: absolute;
+    bottom: 30px; /* Adjust the value as needed */
+    right: 20px; /* Adjust the value to place the icon outside the column */
+     /* Adjust the size as needed */
+    color: #666;
+    padding: 0 25px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease; /* Add transition for smooth animation */
+}
+
+.wish-column:hover .dollar {
+    /* color: #000; Change color on hover */
+    transform: translateX(5px); /* Slightly move the icon to the right on hover */
+}
+
+/* Wishlist icon */
+.wishlist-icon {
+    position: absolute;
+    top: 36px;
+    left: 310px;
+    font-size: 21px;
+    color: #e0dfdf; /* Color of the wishlist icon */
+    background-color: rgb(37, 35, 35); /* Semi-transparent background */
+    border-radius: 50%; /* Circular background */
+    padding: 10px; /* Space around the icon */
+    cursor: pointer; /* Cursor changes to a pointer */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.wishlist-icon:hover {
+    color: #ff0000; /* Color of the icon on hover */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+}
+
+
+#feed {
+    padding: 50px;
+    /* margin-top: -0px; */
+    background-color: #ffffff;
+    text-align: center;
+    
+    
+}
+
+.feed-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: -90px;
+}
+
+.feed-content span {
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 30px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgba(60, 66, 66, 1);
+    font-weight: bold;
+    gap: 20px;
+}
+
+.feed-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 1570px;
+    height: 330px;
+    border-color: #000;
+    box-shadow: #000000;
+}
+
+.feed-column {
+    flex: 1;
+    /* border-color: #19d8e6; */
+    /* color: red; */
+    margin: 0 10px;
+    background-color:rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(107, 103, 103);
+    
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the start for left alignment */
+    text-align: left; /* Left align text */
+}
+
+.feed-column:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(49, 42, 42, 0.377);
+}
+
+.profile-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.ratings {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 2px; /* Space between stars */
+    color: rgba(255, 217, 0, 0.863);
+}
+
+.feed-column h2,
+.feed-column p {
+    font-family: "Noto Sans", sans-serif;
+    margin: 5px 0;
+}
+
+.feed-column h2 {
+    font-size: 20px;
+    color: rgba(60, 66, 66, 1);
+    margin-top: 80px; /* Adjust for profile image overlap */
+}
+
+.feed-column p {
+    font-size: 16px;
+    color: rgba(128, 125, 126, 1);
+}
+
+.line4 {
+    width: 7px;
+    height: 38px;
+    display: flex;
+    padding: 6px 0;
+}
+
+/* Footer Section */
+footer {
+    background-color:rgba(60, 66, 66, 1);
+    padding: 40px 0;
+    /* color: #333; */
+}
+
+.footer-container {
+    max-width: 1300px;
+    height: 75vh;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+    /* text-align: center; */
+    justify-content: center; /* Center-align text within each column */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgba(246, 246, 246, 1);
+}
+
+.footer-column ul li p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgba(246, 246, 246, 1);
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: space-between; /* Create space between social-icons and footer-info */
+    align-items: center;
+    margin-bottom: 40px;
+    /* margin-left: 135px; */
+
+}
+
+.social-icons {
+    display: flex;
+    
+    margin-left: 10px; /* Align with footer-column margin */
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #000000;
+    background-color: #fffdfd;
+    text-decoration: none;
+    transition: color 0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.social-icons a:hover {
+    color: #2c8fbd;
+}
+
+.footer-info {
+    display: flex;
+    margin-right: px;
+    flex-direction: column;
+    /* align-items: center; Center-align the footer-info section */
+    /* text-align: center; Center-align the text */
+    margin-bottom: 40px; /* Add margin at the bottom for spacing */
+}
+
+.footer-info h1 {
+    font-size: 39px;
+    margin-bottom: 20px;
+    color: rgba(246, 246, 246, 1);
+}
+
+.info-columns {
+    display: flex;
+    justify-content: center; /* Center-align the info columns */
+}
+
+.info-column {
+    margin: 0 20px; /* Add margin to create space between the columns */
+}
+
+.info-column img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+    display: flex;
+}
+
+
+.footer-category {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20px; Add margin at the top for spacing */
+}
+
+.footer-category select {
+    padding: 10px;
+    font-size: 50px;
+    color: rgba(246, 246, 246, 1);
+    background-color: rgba(60, 66, 66, 1);
+    border-top: 1px solid #ffffff; /* Keep only the top border */
+    border-bottom: 1px solid #ffffff; /* Keep only the bottom border */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+    
+    width: 100%;
+    height: 40%;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px solid #ddd; /* Optional: Add a border at the top of the copyright section */
+}
+
+.footer-copyright p {
+    font-size: 16px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Adjust the spacing for responsive design */
+
+
+
+
+
+
+
+
+
